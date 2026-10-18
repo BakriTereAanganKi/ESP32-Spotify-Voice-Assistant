@@ -1,0 +1,11 @@
+mcp
+spotipy
+anthropic
+python-dotenv
+fastapi
+uvicorn
+faster-whisper
+numpy
+# only for test_client.py:
+# sounddevice
+# requests
