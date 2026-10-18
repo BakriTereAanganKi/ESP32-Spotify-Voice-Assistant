@@ -185,17 +185,3 @@ Do not commit your Wi-Fi password. Keep real credentials out of the repository.
 | Transcription is empty or wrong | Check the mic wiring (L/R to GND). Lower `GAIN_SHIFT` in the sketch for more volume, or switch `I2S_STD_SLOT_LEFT` to `RIGHT`. Try `WHISPER_MODEL=small.en`. |
 | OLED stays blank | The I2C address may be `0x3D` instead of `0x3C`. |
 | ESP32 cannot reach the server | Check the laptop's IP in `SERVER_URL`, that both are on the same Wi-Fi, and that the firewall allows port 8000. |
-
-## Ideas for later
-
-- Run the language model locally (for example with Ollama) instead of the Claude API.
-- Recognize a few simple commands on the ESP32 itself with a TinyML keyword model, and send only complex requests to the laptop.
-- Wake word instead of push-to-talk.
-
-## Security
-
-`.env` and `.spotify_cache` hold secrets and are listed in `.gitignore`. Never commit them.
-
-## License
-
-Add a license before publishing (for example MIT).
